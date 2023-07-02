@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>RetroGames</title>
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Flex&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/icono.ico" type="image/ico+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+  <div class="main-content-container">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #006994;">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#viejas-novedades">Old News |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mas-queridas">Most Loved |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pelis-juegos">Movies vs Games |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#api-rest">Marvel REST API |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contact Form</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle language-text" href="#" id="languageDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Language
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item" href="index.html">Spanish</a></li>
+                <li><a class="dropdown-item" href="index(eng).html">English</a></li>
+                <li><a class="dropdown-item" href="index(por).html">Portuguese</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <span class="dark-mode-text">Dark Mode</span>
+              <span class="light-mode-text hidden">Light Mode</span>
+              <img id="dmode-button" class="dmode-button" src="img/dmode.png" alt="Modo Dark"
+                onclick="toggleDarkMode()">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 id="viejas-novedades"></h1>
+      <div class="carousel-container">
+        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carousel1" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carousel1" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel1" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/imgcarousel1.png" class="d-block w-100" alt="Flashback (2013)">
+              <div class="carousel-caption">
+                <h5>Flashback (2013)</h5>
+                <p>Remake of the action and platform game released in 1992...</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/imgcarousel2.png" class="d-block w-100" alt="Toki Remake (2018)">
+              <div class="carousel-caption">
+                <h5>Toki Remake (2018)</h5>
+                <p>Remake of the classic platform game originally released in 1989...
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/imgcarousel3.png" class="d-block w-100" alt="Ghosts 'n Goblins Resurrection (2021)">
+              <div class="carousel-caption">
+                <h5>Ghosts 'n Goblins Resurrection (2021)</h5>
+                <p>Remake of the classic action and platform game originally released in 1985...</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousel1" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel1" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+      <h1 id="mas-queridas"></h1>
+      <div class="container">
+        <div class="card-wrapper">
+          <div class="card card-orange">
+            <img src="img/card01.png" class="card-img-top" alt="Atari original">
+            <div class="card-body">
+              <h5 class="card-title">Original Atari</h5>
+              <p class="card-text card-description">Launched in 1977, it was one of the first and most iconic video game
+                consoles...
+              </p>
+            </div>
+          </div>
+          <div class="card card-red">
+            <img src="img/card02.png" class="card-img-top" alt="Family Game">
+            <div class="card-body">
+              <h5 class="card-title">Family Game</h5>
+              <p class="card-text card-description">Launched in the 1980s, it was a popular video game console in
+                several countries...
+              </p>
+            </div>
+          </div>
+          <div class="card card-black">
+            <img src="img/card03.png" class="card-img-top" alt="Sega Genesis">
+            <div class="card-body">
+              <h5 class="card-title">Sega Genesis</h5>
+              <p class="card-text card-description">Launched in 1988 in Japan and known as "Mega Drive" in other
+                regions, it was a 16-bit video game system developed by Sega...</p>
+            </div>
+          </div>
+          <div class="card card-violet">
+            <img src="img/card04.png" class="card-img-top" alt="Super Nintendo">
+            <div class="card-body">
+              <h5 class="card-title">Super Nintendo</h5>
+              <p class="card-text card-description">Launched in 1990, it was a popular and successful 16-bit video game
+                platform developed by Nintendo...</p>
+            </div>
+          </div>
+          <div class="card card-gray">
+            <img src="img/card05.png" class="card-img-top" alt="PlayStation 1">
+            <div class="card-body">
+              <h5 class="card-title">PlayStation 1</h5>
+              <p class="card-text card-description">Launched in 1994, it was an iconic video game platform that
+                revolutionized the industry. It introduced 3D graphics and immersive gaming experiences...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 id="pelis-juegos"></h1>
+      <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carousel2" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carousel2" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carousel2" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/imgcarousel4.png" class="d-block w-100" alt="Street Fighter: La Película (1994)">
+            <div class="carousel-caption">
+              <h5>Street Fighter: The Movie (1994)</h5>
+              <p>Cinematic adaptation of the famous fighting video game. The plot revolves around the fight of Colonel
+                Guile and his allies against the evil dictator M. Bison...</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/imgcarousel5.png" class="d-block w-100" alt="Mortal Kombat: The Movie (1995)">
+            <div class="carousel-caption">
+              <h5>Mortal Kombat: The Movie (1995)</h5>
+              <p>Cinematic adaptation of the popular fighting video game. The story follows a group of fighters chosen
+                to represent Earth in an epic tournament against evil forces...</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/imgcarousel6.png" class="d-block w-100" alt="Sonic: The Movie (2020)">
+            <div class="carousel-caption">
+              <h5>Sonic: The Movie (2020)</h5>
+              <p>Adventure film based on the famous SEGA video game character, Sonic the Hedgehog. The story follows the
+                fast blue hedgehog as he escapes from an evil scientist...</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel2" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel2" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+      <h1 id="api-rest"></h1>
+      <div class="api-rest-container">
+        <div class="banner"></div>
+        <div class="container">
+          <div class="character-grid" id="character-grid"></div>
+        </div>
+      </div>
+      <script src="js/apirest.js"></script>
+      <h1 id="contacto"></h1>
+      <div class="form-container">
+        <form onsubmit="return validarFormulario()">
+          <div>
+            <label for="nombre">Name:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Enter your Name" required>
+          </div>
+          <div>
+            <label for="apellido">Last Name:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Enter your Last Name" required>
+          </div>
+          <div>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your E-Mail" required>
+          </div>
+          <div>
+            <label for="fechaNacimiento">Date of Birth:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+          </div>
+          <div>
+            <label for="comentarios">Send me your comments:</label>
+            <textarea id="comentarios" name="comentarios" rows="5" maxlength="500" placeholder="Maximum 500 characters"
+              required></textarea>
+          </div>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <script src="js/form.js"></script>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <span class="footer-text" style="font-size: 18px">&copy;opyright | <a class="footer-link"
+          href="mailto:pablodamian726@gmail.com">@PabloDamián</a> | 2023</span>
+      <img class="footer-logo" src="img/logo_pie.png" alt="Logo">
+    </div>
+  </footer>
+
+  <button onclick="topFunction()" id="myBtn" title="Subir al inicio">↑</button>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html><!-- END of the code ;) -->
